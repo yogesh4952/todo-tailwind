@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div class="bg-black h-[100vh] w-[100vw] flex justify-center items-center">
+      <div
+        class="content rounded-lg border-white bg-gray-600 rounder-lg text-white p-4"
+      >
+        <h1 class="text-center text-4xl font-bold italic mt-4">Todo List</h1>
+
+        <div class="border-b-2 mb-2 w-[100%] mt-3">
+          <input
+            type="text"
+            class="h-10 rounded-lg p-2 sm:m-2 sm:text-xl text-white focus:ring-2 focus:ring-blue-500 bg-gray-800 border-nSSone outline-none active:outline-none"
+            placeholder="write task here"
+            name=""
+            id="inputText"
+          />
+          <button
+            id="addTask"
+            class="bg-blue-600 hover:bg-slate-100 hover:text-black cursor-pointer transition-colors hover:duration-300 hover:ease-linear h-10 p-2 rounded-lg font-bold"
+          >
+            Add to task
+          </button>
+        </div>
+
+        <div>
+          <ul id="taskList" class="p-4">
+            <!-- <li
+              class="w-[100%] list-none flex justify-between items-center p-2 relative bg-gray-800 h-12 rounded-lg border-blue-900 mb-4"
+            >
+              <button
+                class="h-[100%] hover:bg-white font-bold transition-colors hover:ease-linear hover:duration-75 hover:text-black w-[20%] text-white absolute right-0 top-0 bg-red-500 rounded-lg"
+              >
+                Delete
+              </button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>

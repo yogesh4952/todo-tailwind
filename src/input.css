@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .completed {
+    text-decoration: line-through;
+    transform: scale(0.98);
+    opacity: 0.8;
+
+    color: red;
+    transition: all 0.3s;
+  }
+}
